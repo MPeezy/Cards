@@ -1,0 +1,23 @@
+﻿@model CardsSearchResults
+<h2>Cards</h2>
+<p> Deck Id: @Model.deck_id </p>
+
+@foreach (Card cd in Model.cards)
+{
+
+    <p>------------------------------</p>
+
+    <p>Cards: @Model.cards</p>
+    <p>Deck ID: @Model.deck_id</p>
+    <p>------------------------------</p>
+}
+
+
+
+
+
+    {
+        public bool success { get; set; }
+        public Card[] cards { get; set; }
+        public string deck_id { get; set; }
+        public int remaining { get; set; }
